@@ -25,6 +25,47 @@ class ViewController: UIViewController {
         numberLabel.text = numberArray[count]
         nameLabel.text = nameArray[count]
     }
+    
+    @IBAction func backButton(_ sender: Any) {
+        count -= 1
+        if count < 0 {
+            count = 4
+        }
+        
+        numberLabel.text = numberArray[count]
+        nameLabel.text = nameArray[count]
+        
+    }
+    
+    
+    @IBAction func nextButton(_ sender: Any) {
+        count += 1
+        if count > 4 {
+            count = 0
+        }
+        
+        numberLabel.text = numberArray[count]
+              nameLabel.text = nameArray[count]
+    }
+    
+    @IBAction func first(_ sender: Any) {
+        count = 0
+        numberLabel.text = numberArray[count]
+        nameLabel.text = nameArray[count]
+    }
+    
+    @IBAction func second(_ sender: Any) {
+        count = 1
+        
+        numberLabel.text = numberArray[count]
+        nameLabel.text = nameArray[count]
+    }
+    
+    @IBAction func third(_ sender: Any) {
+        count = 2
+        numberLabel.text = numberArray[count]
+        nameLabel.text = nameArray[count]
+    }
 
 
 }
